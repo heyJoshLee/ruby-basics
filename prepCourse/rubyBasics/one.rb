@@ -24,22 +24,62 @@ def two
 end
 
 def three
-  movies = {:movie1 => 1975,
-            :movie2 => 2004,
-            :movie3 => 2013,
-            :movie4 => 2001,
-            :movie5 => 1981
+  puts "Write a program that uses a hash to store a list "
+  puts "of movie titles with the year they came out. Then" 
+  puts "use the puts command to make your program print out"
+  puts "the year of each movie to the screen. The output for"
+  puts "your program should look something like this."
+  puts "1975"
+  puts "2004"
+  puts "2013"
+  puts "2001"
+  puts "1981\n\n\n"
+  movies = {:movie1 => 1976,
+            :movie2 => 2005,
+            :movie3 => 2014,
+            :movie4 => 2002,
+            :movie5 => 1982
           }
 
   movies.each { |k, v| puts v}
 end
 
 def four
-  movies = [1975, 2004, 2013, 2001, 1981]
+  puts "Use the dates from the previous example and" 
+  puts "store them in an array. Then make your program"
+  puts "output the same thing as exercise 3"
+  movies = [1976, 2005, 2014, 2002, 1982]
   movies.each { |y| puts y}
 end
 
-four
+def five 
+  puts "Write a program that outputs the factorial of the "
+  puts "numbers 5, 6, 7, and 8."
+
+  puts "5: " + (5 * 4 * 3 * 2 * 1).to_s
+  puts "6: " + (6 * 5 * 4 * 3 * 2 * 1).to_s
+  puts "7: " + (7 * 6 * 5 * 4 * 3 * 2 * 1).to_s
+  puts "8: " + (8 * 7 * 6 * 5 * 4 * 3 * 2 * 1).to_s
+end
+
+def six
+  puts "Write a program that calculates the squares of 3 float "
+  puts "numbers of your choosing and outputs the result to the screen."
+
+  puts "4.5 : " + (4.5 * 4.5).to_s
+  puts "31.143 : " + (31.143 * 31.143).to_s
+  puts "341.435 : " + (341.435 * 341.435).to_s
+end
+
+def seven
+  puts "What does the following error message tell you?\n\n"
+  puts "SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+    from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'\n\n"
+
+  puts "One line 2 there is a ')' but there should be a '}'."
+end
+
+seven
 
 
 
