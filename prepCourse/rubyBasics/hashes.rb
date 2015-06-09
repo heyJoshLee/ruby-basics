@@ -79,4 +79,25 @@ def five
 	end
 end
 
-five
+def six
+
+	puts "Write a program that prints out groups of words "
+	puts "that are anagrams. Anagrams are words that have "
+	puts "the same exact letters in them but in a different "
+	puts "order.\n\n"
+	words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
+          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
+          'flow', 'neon']
+	keys = {}
+
+	words.each do |i|
+		k = i.chars.sort.join
+		if keys.has_key?(k)
+			keys[k].push(i)
+		else
+			keys[k] = [i]
+		end
+	end
+	keys
+end
+
